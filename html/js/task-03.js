@@ -20,7 +20,7 @@ const images = [
 
 
 images.map(component => {
-    const picture = `<li><img src = "${component.url}" alt = "${component.alt}"><li>`
+    const picture = `<li><img src = "${component.url}" alt = "${component.alt}"><li>`;
     galleryList.insertAdjacentHTML('afterbegin', picture);
 });
 
