@@ -20,9 +20,9 @@ const images = [
 
 
 images.map(component => {
-    const picture = `<li><img src = "${component.url}" alt = "${component.alt}"><li>`;
-    galleryList.insertAdjacentHTML('afterbegin', picture);
-});
+  const picture = `<li><img src = "${component.url}" alt = "${component.alt}">`;
+  galleryList.insertAdjacentHTML('afterbegin', picture);
+}).join('');
 
 
 

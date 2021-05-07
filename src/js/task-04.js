@@ -4,12 +4,14 @@ const buttonDecrement = allButtons[0];
 const buttonIncrement = allButtons[1];
 let counterValue = 0;
 
-function onClickDecrementValue () {
-    beginningValue.textContent = -- counterValue;
+function onClickDecrementValue() {
+    counterValue -= 1;
+    beginningValue.textContent = counterValue;
 };
 
 function onClickIncrementValue () {
-    beginningValue.textContent = ++ counterValue;
+    counterValue += 1;
+    beginningValue.textContent = counterValue;
 };
 
 buttonDecrement.addEventListener("click", onClickDecrementValue);

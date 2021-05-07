@@ -1,5 +1,5 @@
-const sizeControl = document.getElementById('font-size-control');
-const text = document.getElementById('text');
+const sizeControl = document.querySelector('#font-size-control');
+const text = document.querySelector('#text');
 
 function onSizeControl() {
     text.style.fontSize = sizeControl.value + "px";

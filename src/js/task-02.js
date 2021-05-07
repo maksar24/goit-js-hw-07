@@ -9,8 +9,10 @@ const ingredients = [
   'Приправы',
 ];
 
-ingredients.forEach(component => {
+const preparedIngredients = ingredients.map(component => {
     const row = document.createElement('li');
     row.textContent = component;
-    ingredientsList.append(row);
+  return row;
 });
+
+ingredientsList.append(...preparedIngredients);

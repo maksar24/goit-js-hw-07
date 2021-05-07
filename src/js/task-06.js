@@ -1,4 +1,4 @@
-const valueInput = document.getElementById("validation-input");
+const valueInput = document.querySelector("#validation-input");
 const validLength = valueInput.dataset.length;
 
 function validInputName(event) {
